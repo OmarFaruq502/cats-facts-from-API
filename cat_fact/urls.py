@@ -20,5 +20,5 @@ from facts import views
 urlpatterns = [
     # path('', views.home, name='home'),
     path('admin/', admin.site.urls),
-    path('facts/', include('facts.urls')),
+    path('catfacts/', include('facts.urls')),
 ]
