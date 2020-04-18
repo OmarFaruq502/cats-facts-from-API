@@ -20,6 +20,9 @@ def random(request):
 
 def viewall(request):
     
+    # Django Documentation Referenence
+    # https://docs.djangoproject.com/en/3.0/ref/models/querysets/#order-by
+
     facts = Fact.objects.order_by('-id')[:5]
 
     # # The lastest 5 entries
