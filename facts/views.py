@@ -20,7 +20,10 @@ def random(request):
 
 def viewall(request):
     
-    facts = Fact.objects.all()
+    facts = Fact.objects.order_by('-id')[:5]
+
+    # # The lastest 5 entries
+    # facts = facts[-5:]
 
     return render(request, 'facts/viewall.html', {'facts':facts})
 
