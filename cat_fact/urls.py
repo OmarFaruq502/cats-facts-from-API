@@ -21,4 +21,5 @@ urlpatterns = [
     # path('', views.home, name='home'),
     path('admin/', admin.site.urls),
     path('catfacts/', include('facts.urls')),
-]
+    path('solar/', include('solar.urls')),
+    ]
